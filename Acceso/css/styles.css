@@ -236,6 +236,7 @@ body{
     }
 }
 
+
 /* =========================================================
    PANTALLAS INTERNAS (Perfil, Configuración, Historial)
    ========================================================= */
@@ -879,3 +880,4 @@ fieldset.is-disabled{
         padding: 16px 18px;
     }
 }
+

@@ -1,0 +1,138 @@
+/*Variables de los colores*/
+:root {
+    --azul-agua: #057FCB;
+    --azul-oscuro: #00498B;
+    --azul-celeste: #209DE8;
+    --azul-gris: #4F678A;
+    --fondo: #F5FAFE;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--azul-oscuro);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.barra {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barra a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 1rem;
+}
+
+.barra img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.resumen-1 {
+    background-color: var(--bs-primary);
+    color: var(--blanco);
+}
+
+.resumen-2 {
+    background-color: var(--bs-danger);
+    color: var(--blanco);
+}
+
+.resumen-3 {
+    background-color: var(--bs-success);
+    color: var(--blanco);
+}
+
+.resumen-container {
+    padding: 20px;
+}
+
+.resumen-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.resumen-resultado {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.resumen-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+}
+
+.card-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.filtros-contenido {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.filtros-contenido div {
+    flex: 1;
+    min-width: 0;
+}
+
+.filtros-contenido button {
+    height: 40px;
+}
+
+footer {
+    padding: 50px 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+}
