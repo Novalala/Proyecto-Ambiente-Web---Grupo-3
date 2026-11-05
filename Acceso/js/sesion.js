@@ -43,7 +43,7 @@ function guardarPreferencias(preferencias){
 /*Cierra la sesion y regresa al login*/
 function cerrarSesion(){
     // TODO: fetch("../php/logout.php") para destruir la sesion en el servidor
-    window.location.href = "login.html";
+    window.location.href = "../Login/login.html";
 }
 
 /*Muestra un mensaje de exito o error en un div .alert*/
